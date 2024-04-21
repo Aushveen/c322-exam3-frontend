@@ -42,7 +42,9 @@
       startTheQuiz();
 
       async function startTheQuiz() {
-        let response = await fetch(host + "/quizzes/" + id);
+        let response = await fetch(host + "/quizzes/" + id, {
+          headers: getHeaders()
+        });
         quiz = await response.json();
         await displayTheQuestion(0);
       }
@@ -134,5 +136,6 @@
         item.appendChild(div);
       }
     </script>
+    <script src="configuration.js"></script>
   </body>
 </html>

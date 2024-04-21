@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="login.css" />
-        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="navbar.css"> 
         <title>Form</title>
       </head>
       <body>
@@ -28,6 +28,10 @@
                   <input id="pass" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
+                  <label for="email" class="label">Email Address</label>
+                  <input id="email" type="text" class="input">
+                </div>
+                <div class="group">
                   <input id="check" type="checkbox" class="check" checked>
                   <label for="check"><span class="icon"></span> Keep me Signed in</label>
                 </div>
@@ -45,16 +49,16 @@
                   <input id="user" type="text" class="input">
                 </div>
                 <div class="group">
-                  <label for="pass" class="label">Password</label>
-                  <input id="pass" type="password" class="input" data-type="password">
+                  <label for="password" class="label">Password</label>
+                  <input id="password" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
-                  <label for="pass" class="label">Repeat Password</label>
-                  <input id="pass" type="password" class="input" data-type="password">
+                  <label for="password" class="label">Repeat Password</label>
+                  <input id="password" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
-                  <label for="pass" class="label">Email Address</label>
-                  <input id="pass" type="text" class="input">
+                  <label for="email" class="label">Email Address</label>
+                  <input id="email" type="text" class="input">
                 </div>
                 <div class="group">
                   <input type="submit"  class="button" value="Sign Up" onclick="signup()">
@@ -68,4 +72,5 @@
           </div>
         </div>
       </body>
+      <script src="configuration.js"></script>
 </html>
